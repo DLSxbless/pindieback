@@ -1,0 +1,13 @@
+[
+    {
+        "username": "Vova",
+        "age": 2,
+        "email": "mail@gmail.com",
+        "password": "admin123",
+        "is_happy": true,
+        "favorite_game": [
+            "A",
+            "B"
+        ]
+    }
+]
