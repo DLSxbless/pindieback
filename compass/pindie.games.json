@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "65ef2c368c121ad8a56dabc2"
+  },
+  "title": "G.U.N.N.E.R.",
+  "description": "Продержись как можно дольше, отбиваясь от врагов, которых будет становиться всё больше.",
+  "developer": "IDKWIAm",
+  "image": "https://code.s3.yandex.net/teens/pindie-games/gunner/cover.png",
+  "link": "https://code.s3.yandex.net/teens/pindie-games/gunner/game/index.html",
+  "categories": [
+    {
+      "$oid": "65ef2d1f8c121ad8a56dabc6"
+    },
+    {
+      "$oid": "65ef2d848c121ad8a56dabc9"
+    }
+  ],
+  "users": [
+    {
+      "$oid": "6606b3e0ba5b4c3fa4be6dd5"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66311ffbaee3bea3a050e02c"
+  },
+  "title": "test1",
+  "description": "test",
+  "developer": "test",
+  "image": "https://code.s3.yandex.net/teens/pindie-games/gunner/cover.png",
+  "link": "https://test2222.ru/",
+  "users": [],
+  "categories": [
+    {
+      "$oid": "65ef2d1f8c121ad8a56dabc6"
+    },
+    {
+      "$oid": "65ef2d428c121ad8a56dabc7"
+    }
+  ],
+  "__v": 0
+}]
