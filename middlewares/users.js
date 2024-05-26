@@ -61,11 +61,11 @@ const deleteUser = async (req, res, next) => {
 };
 
 
-const hashPassword = async(req, res, next) => {
+const hashPassword = async (req, res, next) => {
     try {
         const salt = await bcrypt.genSalt(10);
         const hash = await bcrypt.hash(req.body.password, salt)
-        req.body.password =  hash;
+        req.body.password = hash;
         next();
     }
 
@@ -74,5 +74,11 @@ const hashPassword = async(req, res, next) => {
     }
 }
 
-
-module.exports = { findAllUsers, findUserById, createUser, updateUser, checkEmptyNameAndEmail, deleteUser, hashPassword }
+const checkIsVoteRequest = async (req, res, next) => {
+    // Если в запросе присылают только поле users
+    if (Object.keys(req.body).length === 1 && req.body.users) {
+        req.isVoteRequest = true;
+    }
+    next();
+};
+module.exports = { findAllUsers, findUserById, createUser, updateUser, checkEmptyNameAndEmail, deleteUser, hashPassword, checkIsVoteRequest }
