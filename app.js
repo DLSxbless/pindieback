@@ -8,7 +8,7 @@ const cookieParser = require('cookie-parser');
 const pageRouter = require("./routes/page")
 
 const app = express();
-const PORT = process.env.PORT 
+const PORT = 3001 || process.env.PORT 
 connectToDatabase()
 
 
