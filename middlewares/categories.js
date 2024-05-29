@@ -1,3 +1,4 @@
+const { message } = require('statuses');
 const categories = require('../models/category');
 
 const findAllCategories = async (req, res, next) => {
@@ -59,6 +60,7 @@ const deleteCategory = async (req, res, next) => {
         res.status(400).send({ message: "Error deleting category" });
     }
 };
+
 
 
 module.exports = { findAllCategories, findCategoryById, createCategory, updateCategory, checkEmptyName, deleteCategory }

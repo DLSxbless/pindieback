@@ -9,8 +9,8 @@ const pageRouter = require("./routes/page")
 
 const app = express();
 const PORT = 3001 || process.env.PORT 
-connectToDatabase()
 
+connectToDatabase()
 
 app.use(
     cors, 
