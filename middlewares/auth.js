@@ -20,7 +20,7 @@ const checkAuth = (req, res, next) => {
 
 }
 
-const checkCookiesJWT = (req, res) => { 
+const checkCookiesJWT = (req, res, next) => { 
     if(!req.cookies.jwt) {
         return res.redirect("/")
 
