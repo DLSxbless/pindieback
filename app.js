@@ -5,7 +5,7 @@ const cors = require('./middlewares/cors');
 const apiRouter = require('./routes/api');
 const connectToDatabase = require('./database/connect');
 const cookieParser = require('cookie-parser');
-const pageRouter = require("./routes/page")
+const pageRouter = require("./routes/pages")
 
 const app = express();
 const PORT = 3001 || process.env.PORT 
