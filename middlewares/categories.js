@@ -81,6 +81,7 @@ const checkIsCategoryExists = async (req, res, next) => {
   }
 };
 
+
 module.exports = {
   findAllCategories,
   createCategory,
@@ -89,4 +90,5 @@ module.exports = {
   deleteCategory,
   checkIsCategoryExists,
   checkEmptyName,
+  
 };

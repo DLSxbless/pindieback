@@ -98,6 +98,7 @@ const checkIsUserExists = async (req, res, next) => {
   }
 };
 
+
 module.exports = {
   findAllUsers,
   createUser,
