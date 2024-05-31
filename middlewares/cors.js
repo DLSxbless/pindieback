@@ -1,7 +1,7 @@
 const allowedCors = [
      'http://localhost:3000',
-     'http://pindie-albstudent.nomoredomainswork.ru',
-     'https://pindie-albstudent.nomoredomainswork.ru'
+     'http://pindie-albstudentfr.nomorepartiesco.ru',
+     'https://pindie-albstudentfr.nomorepartiesco.ru'
 ];
 function cors(req, res, next) {
     const { origin } = req.headers;
